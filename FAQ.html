@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Calm Clinic</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="calmclinic.css">
+
+
+
+    </head>
+    <body>
+
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">Calm Clinic</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active w3-bar-item w3-button"><a href="#home">Home</a></li>
+            <li><a href="#FAQ" class="w3-bar-item w3-button">FAQ</a></li>
+            <li><a href="ourmission.html" class="w3-bar-item w3-button">Our Mission</a></li>
+          </ul>
+        </div>
+      </nav>
+
+<center>
+<div class="container" id = "mainbox">
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+
+<script>
+ $(document).ready(function() {
+
+    $('.faq_question').click(function() {
+
+        if ($(this).parent().is('.open')){
+            $(this).closest('.faq').find('.faq_answer_container').animate({'height':'0'},500);
+            $(this).closest('.faq').removeClass('open');
+
+            }else{
+                var newHeight =$(this).closest('.faq').find('.faq_answer').height() +'px';
+                $(this).closest('.faq').find('.faq_answer_container').animate({'height':newHeight},500);
+                $(this).closest('.faq').addClass('open');
+            }
+
+    });
+
+});
+</script>
+<style>
+/*FAQS*/
+.faq_question {
+    margin: 0px;
+    padding: 0px 0px 15px 0px;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: "Arial Black", Gadget, sans-serif;
+}
+
+.faq_answer_container {
+    height: 0px;
+    overflow: hidden;
+    padding: 0px;
+    font-family: "Arial", Gadget, sans-serif;
+}
+</style>
+
+<div class="faq_container">
+  <BR><BR><p p class="sansserif"> <font size="10"><b>FAQ</b></font></P>
+   <div class="faq">
+      <div class="faq_question">Question goes here</div>
+           <div class="faq_answer_container">
+              <div class="faq_answer">Answer goes here<p><br></p></div>
+           </div>
+    </div>
+    <div class="faq">
+       <div class="faq_question">Question goes here</div>
+            <div class="faq_answer_container">
+               <div class="faq_answer">Answer goes here<p><br></p></div>
+            </div>
+     </div>
+     <div class="faq">
+        <div class="faq_question">Question goes here</div>
+             <div class="faq_answer_container">
+                <div class="faq_answer">Answer goes here<p><br></p></div>
+             </div>
+      </div>
+      <div class="faq">
+         <div class="faq_question">Question goes here</div>
+              <div class="faq_answer_container">
+                 <div class="faq_answer">Answer goes here<p><br></p></div>
+                 <div> </div>
+              </div>
+       </div>
+       <div class="faq">
+          <div class="faq_question">Question goes here</div>
+               <div class="faq_answer_container">
+                  <div class="faq_answer">Answer goes here<p><br></p></div>
+               </div>
+        </div>
+        <div class="faq">
+           <div class="faq_question">Question goes here</div>
+                <div class="faq_answer_container">
+                   <div class="faq_answer">Answer goes here<p><br></p></div>
+                </div>
+         </div>
+ </div>
+  </div>
+</center>
+
+  </body>
+
+
+</html>
