@@ -16,4 +16,5 @@ $(function() {
 
     // with vanilla JS!
     Ps.initialize(document.getElementById('Demo'));
+
 });

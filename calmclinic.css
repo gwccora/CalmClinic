@@ -5,3 +5,8 @@
       height: 50vw;
       margin: 50px;
   }
+
+
+  body, html {
+      cursor: url("bearpawcursor.cur"), progress;
+  }
