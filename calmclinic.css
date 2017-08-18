@@ -10,3 +10,9 @@
   body, html {
       cursor: url("bearpawcursor.cur"), progress;
   }
+  .floatleft {
+    float:left;
+}
+  .floatright {
+      float:right;
+  }
