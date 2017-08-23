@@ -16,3 +16,14 @@
   .floatright {
       float:right;
   }
+  h1 {
+    color: grey;
+font-family: "Arial black",Gadget, sans-serif;
+    font-size: 100px;
+  }
+
+  p {
+    color: grey;
+    font-family: "arial",sans-serif;
+    font-size: 20px;
+  }
